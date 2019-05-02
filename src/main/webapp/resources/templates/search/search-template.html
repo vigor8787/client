@@ -1,0 +1,37 @@
+{{* search-script}}
+
+<div>
+    <div>
+        <div>
+            <input class="search" id="keyword_ipt" type="search" value="kakao" placeholder="키워드를 입력하세요." style="width:415px;"/>
+            <input class="btn_search" id="place_search_btn" title="장소 검색" type="button" value="장소 검색" />
+        </div>
+        <div id="stock_search_layer_wrap"></div>
+    </div>
+</div>
+
+<div>
+    <p>키워드를 검색하세요!</p>
+</div>
+<div>
+    <div class="left-box">
+        <h5>인기검색어 1위 ~ 5위</h5>
+        <div >
+            <ol class="com_rank" id="keyword_top5">
+            </ol>
+        </div>
+    </div>
+    <div class="right-box">
+        <h5>인기검색어 6위 ~ 10위</h5>
+        <div>
+            <ol class="com_rank" id="keyword_top10">
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div id="data-container"></div>
+    <div id="pagination-container" style="display:inline-table;"></div>
+</div>

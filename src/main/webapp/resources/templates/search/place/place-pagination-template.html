@@ -1,0 +1,10 @@
+ <ul id="place_ul">
+        {{#each data}}
+            <li class="place_li">
+                <span>{{makeIdx @index @root.startIdx}}.</span>
+                <a href="javascript:;" class="place">
+                    <span class="place_span" placeUrl="{{place_url}}" addressName="{{address_name}}" phone="{{phone}}" longtitude="{{x}}" latitude="{{y}}">{{place_name}}</span>
+                </a>
+            </li>
+        {{/each}}
+ </ul>

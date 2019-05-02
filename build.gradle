@@ -1,0 +1,39 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.20.RELEASE'
+	}
+}
+
+plugins {
+	id 'java'
+}
+
+apply plugin: 'org.springframework.boot'
+
+group = 'com.maps'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+
+	compile("org.springframework.boot:spring-boot-starter-tomcat")
+
+
+	//compileOnly 'org.projectlombok:lombok'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+	compile group: 'org.msgpack', name: 'jackson-dataformat-msgpack', version: '0.8.13'
+
+	//JSP
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile('javax.servlet:jstl:1.2')
+}
